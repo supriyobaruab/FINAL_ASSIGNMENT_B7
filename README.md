@@ -1,4 +1,4 @@
-# Final assingment 
+# Final Assignment of B7 IP theory
 ### Questions are as follows:
 - Write a C++ program that takes marks of 6 different courses of a scholar as input and stores them into an integer type array. Input must be taken from the user. Check the number’s validity. The program takes only 0 to 100 as input. From that array find out the total percentage of the marks and finally check whether the total percentage is odd or even as well as Prime number or not. 
 - Create a C++ program to manage staff salaries for a farm. Define a struct named Staff, which includes the attributes- stfID and monthlyWages. Implement methods within the struct-setData to set the staff information, displayData to display the staff details. Additionally, include an operational method called yearlyWagesWithBonus() to calculate the yearly wages with bonuses for each staff. The company provides two bonuses per year, each equal to 50 percent of the monthly wages. In the main function, demonstrate the usage of the Staff struct by creating an instance named s1, setting details, displaying the product information, and showing the yearly wages of this staff with 2 bonuses. 
