@@ -46,7 +46,8 @@ int main()
     Paralelelogram haha;
     haha.setData1(10);
     haha.setData2(20);
-    cout << haha.getArea();
+    cout << "Base :" << haha.getData1() << " , " << "Height :" << haha.getData2() << endl;
+    cout << "Area :" << haha.getArea() << endl;
 
     return 0;
 }
