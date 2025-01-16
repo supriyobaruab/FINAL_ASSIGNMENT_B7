@@ -4,7 +4,7 @@ using namespace std;
 int marks[6];
 int total = 0;
 int percentage = 0;
-int flag = 0; // for checking prime number
+int flag = 0; // প্রাইম চেক করার জন্য।
 
 int main()
 {
@@ -21,7 +21,7 @@ int main()
         total += marks[i];
     }
     // cout <<total;
-    percentage = (total / 600) * 100;
+    percentage = (total * 100) / 600;
     cout << "Total percentage :" << percentage << "%" << endl;
 
     if (percentage % 2 == 0)
@@ -34,15 +34,21 @@ int main()
     }
     for (int i = 2; i < percentage; i++)
     {
-        flag = 1;
+        if (percentage % i == 0)
+        {
+            flag = 1;
+            break;
+        }
     }
     if (flag == 0)
     {
-        cout << "Total percentage is Prime";
+        cout << endl
+             << "Total percentage is Prime";
     }
     else
     {
-        cout << " Total percentage isn't Prime";
+        cout << endl
+             << "Total percentage isn't Prime";
     }
     return 0;
 }
