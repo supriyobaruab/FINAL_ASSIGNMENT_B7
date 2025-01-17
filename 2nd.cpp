@@ -4,11 +4,39 @@ using namespace std;
 struct Staff
 {
     int stfID;
-    int monthlyWages;
-};
+    float monthlyWages;
+
+    void setData(int a, int b)
+    {
+        stfID = a;
+        monthlyWages = b;
+    }
+    void displayData()
+    {
+        cout << "The stuff id : " << stfID << endl;
+        cout << "monthly wages " << monthlyWages << endl;
+    }
+    void yearlyWagesWithBonus()
+    {
+        float yearly = monthlyWages * 12;
+        cout << "Yearly wages :" << yearly << endl;
+        float total = monthlyWages; // বছরে ২ টা বোনাস বেতনের ৫০% হলে টোটাল বোনাস হবে একমাসের বেতন এর সমান।
+        float wages_with_bonus = yearly + total;
+        cout << "Yearly wages with bonus : " << wages_with_bonus << endl;
+    }
+} stuff1;
 
 int main()
 {
+    int id;
+    float wages;
+    cout << "Enter the stuff id :";
+    cin >> id;
+    cout << "Enter the monthly wages :";
+    cin >> wages;
+    stuff1.setData(id, wages);
+    stuff1.displayData();
+    stuff1.yearlyWagesWithBonus();
 
     return 0;
 }
